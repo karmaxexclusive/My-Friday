@@ -58,7 +58,7 @@ async def gmute_him(client, message):
         await g.edit("`Re-Gmute? Seriously? :/`")
         return
     await gmute(userz.id, reason)
-    gmu = f"**#Gmutted** \n**User :** `{userz.id}` \n**Reason :** `{reason}`"
+    gmu = f"**RIP User :** `{userz.id}` \n**Reason :** `{reason}`"
     await g.edit(gmu)
     log = LogIt(message)
     await log.log_msg(client, gmu)
